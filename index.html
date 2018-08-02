@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title></title>
+  </head>
+  <body>
+    <video src="videoplayback.mp4" autoplay controls   id="video">
+      </video>
+<button type="button" name="button" onclick="play()">play</button>
+<button type="button" name="button" onclick="pause()">pause</button>
+
+<audio src="nalo.mp3" autoplay controls id="audio">
+</audio>
+<button type="button" name="button" onclick="play1()">play</button>
+<button type="button" name="button" onclick="pause1()">pause</button>
+  </body>
+</html>
+<script type="text/javascript">
+function play(){
+  var vid=document.getElementById('video');
+  vid.play();
+}
+function pause(){
+  var vid=document.getElementById('video');
+  vid.pause();
+}
+//audio
+function play1(){
+  var aud=document.getElementById('audio');
+  aud.play();
+}
+function pause1(){
+  var aud=document.getElementById('audio');
+  aud.pause();
+}
+</script>
